@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,digit,sum=0,count=0;
+    
+    printf("Enter the number: ");
+    scanf("%d",&n);
+    
+    printf("digits of the number are :\n");
+    
+    while(n>0){
+        digit = n%10;
+        sum=sum+digit;
+        printf("%d\n",digit);
+        count++;
+        n=n/10;
+    }
+    
+    printf("The sum is :%d\n",sum);
+    printf("No. of digits are:%d",count);
+    return 0;
+}

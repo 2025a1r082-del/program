@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{int n, rev=0,digit,org;
+    printf("Enter the number:");
+    scanf("%d",&n);
+    org=n;
+    while(n!=0){
+        digit = n%10;       //extract last digit
+        rev=rev*10+digit;   //build reversed number
+        n=n/10;             //remove last digit
+        
+    }printf("%d\n",rev);
+    if(rev==org){
+    printf("palindrome number");}
+    else{printf("not palindrome number");}
+    return 0;
+}
